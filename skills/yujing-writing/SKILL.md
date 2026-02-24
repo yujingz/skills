@@ -1,30 +1,36 @@
 ---
 name: yujing-writing
-description: "Draft, rewrite, and polish technical docs, client-facing docs, and internal team docs in Yujing's writing style: concise, structured, factual, and execution-oriented. Use when the user wants writing that is clear, decision-ready, and operational, including Chinese, English, or bilingual output."
+description: "Draft, rewrite, and structure strategy, engineering-practice, product, and team-alignment documents in Yujing's writing style: judgment-first, concise, list-driven, and execution-oriented. Use when the user needs trend analysis, annual goals, technical planning, team communication, or decision-ready Chinese/English/bilingual docs."
 ---
 
 # Yujing Writing
 
 ## Goal
-Produce writing that matches Yujing's style across document types: direct, structured, factual, and execution-ready.
+Produce writing that is direct, structured, and decision-ready: state judgment first, then expand with executable items.
+
+## Required References
+Read `references/style-signals.md` before drafting strategy docs, meeting docs, or annual-goal docs.
 
 ## Workflow
-1. Identify document type, audience, and required outcome.
-2. Confirm output language mode: Chinese, English, or bilingual.
-3. Extract required facts first: scope, constraints, owners, timeline, dependencies, cost, and risks.
-4. Select the matching structure from the templates below.
-5. Draft in short sections with clear headings and numbered lists.
-6. Mark assumptions, open questions, and out-of-scope items explicitly.
-7. Run the quality gate before finalizing.
+1. Identify document intent: trend scan, annual goals, engineering practice, product direction, or execution update.
+2. Confirm audience and language mode: Chinese, English, or bilingual mirrored sections.
+3. Build a section-first outline with explicit nouns, such as `趋势`, `目标`, `工程实践`, `产品方向`, `风险`, `下一步`.
+4. Draft each point as `判断/事实 -> 影响 -> 动作`, and keep each sentence focused on one idea.
+5. For goals, use numbered objectives with numbered sub-actions and explicit acceptance boundaries.
+6. Add an automation pass: for each manual step, check whether it can be automated, validated, or delegated to AI.
+7. Add a verification pass: specify review/acceptance methods (for example AI review + human review + BDD boundary).
+8. Run the quality gate before finalizing.
 
 ## Global Style Rules
-- Keep tone calm, precise, and implementation-oriented.
-- Prefer explicit operational verbs: `define`, `integrate`, `deploy`, `validate`, `support`, `review`.
-- Prefer concrete nouns: `scope`, `interface`, `workflow`, `owner`, `SLA`, `timeline`, `cost`.
-- Use measurable language whenever possible: duration, volume, throughput, frequency, and budget.
-- Separate committed scope from optional scope.
-- Avoid marketing fluff, emotional language, and vague superlatives.
-- Prefer lists over long narrative paragraphs.
+- Keep tone calm, decisive, and implementation-oriented.
+- Prefer short declarative lines over long narrative paragraphs.
+- Use contrast framing when useful, such as `A is getting cheaper, B is still expensive`.
+- Use direct recommendations for execution, such as `Use the best model` and `Automate manual work whenever possible`.
+- Prefer concrete operational verbs: `define`, `integrate`, `automate`, `validate`, `review`, `accept`.
+- Prefer concrete nouns: `friction`, `workflow`, `boundary`, `owner`, `timeline`, `cost`, `toolchain`.
+- Keep strategy tied to operations: every major viewpoint should map to a concrete engineering or product action.
+- Separate `committed`, `optional`, and `out of scope` content explicitly.
+- Avoid hype, vague abstractions, and slogan-only statements.
 
 ## Bilingual Rules
 - Mirror heading structure across Chinese and English when bilingual output is requested.
@@ -32,38 +38,42 @@ Produce writing that matches Yujing's style across document types: direct, struc
 - Translate for clarity and business intent, not literal word-for-word mapping.
 
 ## Templates
-Use one template as the default scaffold and adapt only when user asks.
+Use one template as the default scaffold and adapt only when the user asks.
 
-### Technical Doc Template
-1. Objective
+### Trend and Direction Template
+1. Trends
+2. This year's goals
+3. Engineering practices
+4. Product direction
+5. Risks and boundaries
+6. Next actions
+
+### Technical Execution Template
+1. Context and target
 2. Scope and non-goals
-3. System context and interfaces
-4. Design or workflow
-5. Implementation plan
-6. Validation and acceptance criteria
-7. Risks and mitigations
-8. Rollout and ownership
+3. Implementation approach
+4. Validation and acceptance boundary
+5. Risks and mitigation
+6. Owners and timeline
 
-### Client Doc Template
-1. Background and goal
-2. Proposed solution scope
-3. Deliverables and timeline
-4. Commercial terms or effort model
-5. Support model and responsibilities
-6. Assumptions and dependencies
-7. Next steps
-
-### Team Doc Template
+### Team Operating Template
 1. Context
-2. Decision or plan
-3. Action items
-4. Owner and due date
-5. Risks and blockers
-6. Communication cadence
+2. Core judgments
+3. Execution principles
+4. Action items with owners
+5. Review and acceptance method
+6. Risks and blockers
 
 ## Quality Gate
-1. State scope, boundary, and intended outcome clearly.
-2. Make decisions and next actions explicit.
-3. Include numbers and constraints where available.
-4. Distinguish `in scope`, `optional`, and `out of scope`.
-5. Keep language concise and remove redundant filler.
+1. State the core judgment of each section in the first line.
+2. Map each trend or viewpoint to at least one operational implication.
+3. Include measurable constraints or acceptance boundaries where available.
+4. Distinguish `committed`, `optional`, and `out of scope`.
+5. Include an automation opportunity check for repetitive manual work.
+6. Include a validation approach for quality control and acceptance.
+7. Keep wording concise and remove filler.
+
+## Defaults for Missing Inputs
+1. Assume audience is engineering and product leads plus execution owners.
+2. Assume output should be list-first and decision-ready, not long-form narrative.
+3. Assume the user wants practical actions that reduce human-AI friction.
