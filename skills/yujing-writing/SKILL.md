@@ -8,9 +8,6 @@ description: "Draft, rewrite, and structure strategy, engineering-practice, prod
 ## Goal
 Produce writing that is direct, structured, and decision-ready: state judgment first, then expand with executable items.
 
-## Required References
-Read `references/style-signals.md` before drafting strategy docs, meeting docs, or annual-goal docs.
-
 ## Workflow
 1. Identify document intent: trend scan, annual goals, engineering practice, product direction, or execution update.
 2. Confirm audience and language mode: Chinese, English, or bilingual mirrored sections.
