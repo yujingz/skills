@@ -29,6 +29,25 @@ Produce writing that is direct, structured, and decision-ready: state judgment f
 - Separate `committed`, `optional`, and `out of scope` content explicitly.
 - Avoid hype, vague abstractions, and slogan-only statements.
 
+## Style Signals
+- Lead with judgment, then expand.
+- Use short bullets and keep one idea per line.
+- Mix strategic statements with immediate execution implications.
+- Use numbered decomposition for goals and sub-actions.
+- Balance AI-first execution with explicit human review and acceptance boundaries.
+
+## Sentence Patterns
+- Contrast: `X is becoming cheap; Y is still expensive`.
+- Inflection: `Quality and efficiency have crossed a threshold`.
+- Directive: `Use the best model`.
+- Operating principle: `If work is manual, check if it can be automated`.
+- Tradeoff: `Editor is fine; CLI is better in high-generation workflows`.
+- System view: `Programming is not only coding; it is an automation interface`.
+
+## Vocabulary Preferences
+- Prefer: `模型`, `自动化`, `验证`, `review`, `验收边界`, `工具链`, `CLI`, `OpenAPI`, `Action`, `Scale`, `Friction`.
+- Avoid: high-level motivational wording without operating detail.
+
 ## Bilingual Rules
 - Mirror heading structure across Chinese and English when bilingual output is requested.
 - Align key terms on first mention, then stay consistent.
